@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+<display-name>Notebook</display-name>
+<welcome-file-list>
+<welcome-file>listUser.jsp</welcome-file>
+</welcome-file-list>
+<servlet>
+<description></description>
+<servlet-name>DBServlet</servlet-name>
+<servlet-class>ua.cn.notebook.web.DBServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>DBServlet</servlet-name>
+<url-pattern>/DBServlet</url-pattern>
+</servlet-mapping>
+</web-app>

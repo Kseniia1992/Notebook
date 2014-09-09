@@ -1,0 +1,51 @@
+header {
+	width: 100%; height:100px;
+	background: radial-gradient(#0000FF,#87ceff);
+	background: -moz-radial-gradient(#0000FF,#87ceff);
+	outline: 2px solid #0000cd;
+	padding-top:10px;
+}
+
+h1{
+	font-family: 'Arial';
+	font-size: 40px; color: white;
+	padding-left:160px;
+}
+
+table{
+	margin-left:260px;
+	spacing:0;
+    width:60%;
+	border-collapse:collapse;
+	border-color:black;
+}
+
+th{
+	 background: #00008b;
+	 color:white;
+	 font-size: 18px;
+}
+
+td{
+	background:#b9d3ee;
+	color:#00008b;
+	font-size: 18px;
+}
+
+ul{
+	 list-style-type:none;
+	 font-size: 18px;
+}
+
+ a{
+ 	text-decoration:none;
+  }
+ A {
+    color:  #00008b; 
+   }
+   A:visited {
+    color:  #00008b; 
+   }
+   A:active {
+    color:  #00008b; 
+   }
