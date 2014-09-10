@@ -12,7 +12,7 @@ import ua.cn.notebook.domain.Users;
 import ua.cn.notebook.service.UserService;
 
 /**
- * Сервлет
+ * Servlet
  * @author Kseniia
  *
  */
@@ -20,33 +20,33 @@ public class DBServlet extends HttpServlet{
 	/**	 */
 	private static final long serialVersionUID = 1L;
 	
-	/**	JSP страница для добавления пользователя в базу данных */
+	/**	JSP page for adding of users */
 	private static String INSERT = "/user.jsp";
     
-	/**	JSP страница для обновления пользователя в базе данных */
+	/**	JSP page for updating of users */
 	private static String Edit = "/edit.jsp";
 	
-	/**	JSP страница для отображения всех пользователей базы данных */
+	/**	JSP page for listing of all users */
     private static String UserRecord = "/listUser.jsp";
     
-    /**	JSP страница для поиска пользователей в базе данных */
+    /**	JSP page for searching of users */
     private static String Search = "/search.jsp";
    
-    /** Объявление переменной для объектного типа UserService*/
+    /** Declaration a variable for the object type UserService*/
     private UserService us;
 
     /**
-     * Конструктор 
+     * Constructor 
      */
     public DBServlet() {
-        super();                //констрктор базового класса
-        us = new UserService(); //объект UserService
+        super();                //constructor of base class
+        us = new UserService(); //initialization of UserService object
     }
 
     /**
-     * Переопределение метода doGet 
-     * @param request запрос
-     * @param response ответ
+     * Redefinition of doGet method 
+     * @param request 
+     * @param response 
      * @throws ServletException, IOException   
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -109,9 +109,9 @@ public class DBServlet extends HttpServlet{
     }
 
     /**
-     * Переопределение метода doPost
-     * @param request запрос
-     * @param response ответ
+     * Redefinition of doPost method
+     * @param request 
+     * @param response 
      * @throws ServletException, IOException
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

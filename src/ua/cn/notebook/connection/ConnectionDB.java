@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 import java.util.Properties;
 
 /**
- * Подключение к базе данных
+ * Connection to data base
  * @author Kseniia
  *
  */
@@ -45,7 +45,7 @@ public class ConnectionDB {
 	    					+ " age        integer, "
 	    					+ " gender     char,              CHECK (gender = 'm'::char OR gender = 'f'::char), "
 	    					+ " phone      character varying)";
-	    			stmt.executeUpdate(sql); // выполняем запрос sql	    			
+	    			stmt.executeUpdate(sql); 	    			
 	    			stmt.close();       
 	            } catch (Exception e) {
 	            	e.printStackTrace();

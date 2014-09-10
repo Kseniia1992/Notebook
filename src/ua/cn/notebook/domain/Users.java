@@ -1,7 +1,7 @@
 package ua.cn.notebook.domain;
 
 /**
- * Класс Users содержит информацию о пользователях
+ * Users class contains information about the users
  * @author Kseniia
  *
  */
@@ -10,100 +10,100 @@ public class Users {
 	/** Id */
 	private int id;
 	
-	/** Фамилия */
+	/** Surname */
 	private String secondName;
 	
-	/** Имя */
+	/** Name */
 	private String firstName;
 	
-	/** Возраст */
+	/** Age */
 	private int age;
 	
-	/** Пол */
+	/** Gender */
 	private String gender;
 	
-	/** Телефон */
+	/** Phone */
 	private String phone;
 	
 	/**
-	 * @return id номер пользователя
+	 * @return id user number
 	 */
 	public int getId() {
 		return id;
 	}
 	
 	/**
-	 * @param id номер пользователя
+	 * @param id user number
 	 */
 	public void setId(int id) {
 		this.id = id;
 	}
 	
 	/**
-	 * @return secondName фамилия пользоватеоя
+	 * @return secondName user surname
 	 */
 	public String getSecondName() {
 		return secondName;
 	}
 	
 	/**
-	 * @param secondName фамилия пользоватеоя
+	 * @param secondName user surname
 	 */
 	public void setSecondName(String secondName) {
 		this.secondName = secondName;
 	}
 	
 	/**
-	 * @return firstName имя пользователя
+	 * @return firstName user name
 	 */
 	public String getFirstName() {
 		return firstName;
 	}
 	
 	/**
-	 * @param firstName имя пользователя
+	 * @param firstName user name
 	 */
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
 	
 	/**
-	 * @return age возраст пользователя
+	 * @return age 
 	 */
 	public int getAge() {
 		return age;
 	}
 	
 	/**
-	 * @param age возраст пользователя
+	 * @param age 
 	 */
 	public void setAge(int age) {
 		this.age = age;
 	}
 	
 	/**
-	 * @return gender пол пользователя
+	 * @return gender 
 	 */
 	public String getGender() {
 		return gender;
 	}
 	
 	/**
-	 * @param gender пол пользователя
+	 * @param gender 
 	 */
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
 	
 	/**
-	 * @return phone телефонный номер пользователя
+	 * @return phone 
 	 */
 	public String getPhone() {
 		return phone;
 	}
 	
 	/**
-	 * @param phone телефонный номер пользователя
+	 * @param phone 
 	 */
 	public void setPhone(String phone) {
 		this.phone = phone;

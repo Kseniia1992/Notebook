@@ -11,28 +11,28 @@ import ua.cn.notebook.connection.ConnectionDB;
 import ua.cn.notebook.domain.Users;
 
 /**
- * Класс UserService реализует CRUD методы с базой данных
- * и методы выборки данных, используя параметризированные запросы.
+ * UserService class implements CRUD methods 
+ * and methods of data selection.
  * @author Kseniia
  *
  */
 public class UserService {
 	
 	/**
-	 * Объект для соединения с базой данных
+	 * Object for connection to data base
 	 */	
 	private Connection conn;
 
     /**
-     * Конструктор выполняет соединение с бд
+     * Constructor performs a database connection
      */
 	public UserService() {
         conn = ConnectionDB.getConnection();
     }
 
 	/**
-	 * Добавляет новый объект в базу данных
-	 * @param user объект для добавляения
+	 * Adding new object to data base
+	 * @param user object for adding
 	 */
 	public void addUser(Users user) {
 		try {
@@ -52,8 +52,8 @@ public class UserService {
 	}
 	
 	/**
-	 * Удаляет объект из базы данных
-	 * @param Id номер объекта
+	 * Remove object from data base
+	 * @param Id 
 	 */
 	public void removeUser(int Id) {
 		 try {
@@ -67,8 +67,8 @@ public class UserService {
 	}
 
 	/**
-	 * Обновляет объект в базе данных
-	 * @param user объект для обновления
+	 * Update object in data base
+	 * @param user - object for updating
 	 */
 	public void editUser(Users user) {
 		 try {
@@ -88,8 +88,8 @@ public class UserService {
 	}
 
 	/**
-	 * Выборка всех объектов из таблицы базы данных
-	 * @return users список всех пользователей 
+	 * Selection of all objects from table
+	 * @return users - list of all objects
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public List getAllUsers() {
@@ -115,10 +115,10 @@ public class UserService {
 	}
 
 	/**
-	 * Выборка пользователей из базы данных по номеру 
-	 * для оперделения выделенного объекта {@link#search.jsp}
-	 * @param id номер пользователя
-	 * @return user объект типа Users
+	 * Selection of users from data base by id 
+	 * for determination of alloted object {@link#search.jsp}
+	 * @param id 
+	 * @return user - Users object
 	 */
 	 public Users getObjectById(int id) {
 	       Users user = new Users();
@@ -142,9 +142,9 @@ public class UserService {
 	}
 	
 	/**
-	 * Выборка пользователей из базы данных по номеру
-	 * @param id номер пользователя
-	 * @return users список пользователей
+	 * Selection of users from data base by id 
+	 * @param id 
+	 * @return users - list of users
 	 */
 	public List<Users> getUsersById(int id) {
 		List<Users> users = new ArrayList<Users>();
@@ -169,9 +169,9 @@ public class UserService {
 	}
 	
 	/**
-	 * Выборка пользователей из базы данных по фамилии
-	 * @param secondName фамилия пользователя
-	 * @return список пользователей
+	 * Selection of users from data base by surname
+	 * @param secondName 
+	 * @return users - list of users
 	 */
 	public List<Users> getUsersBySecondName(String secondName) {
 		List<Users> users = new ArrayList<Users>();
@@ -197,9 +197,9 @@ public class UserService {
 	}
 	
 	/**
-	 * Выборка пользователей из базы данных по имени
-	 * @param firstName имя пользователя
-	 * @return список пользователей
+	 * Selection of users from data base by name
+	 * @param firstName 
+	 * @return users - list of users
 	 */
 	public List<Users> getUsersByFirstName(String firstName) {
 		List<Users> users = new ArrayList<Users>();
@@ -225,9 +225,9 @@ public class UserService {
 	}
 
 	/**
-	 * Выборка пользователей из базы данных по возрасту
-	 * @param age возраст пользователя
-	 * @return список пользователей
+	 * Selection of users from data base by age
+	 * @param age 
+	 * @return users - list
 	 */
 	public List<Users> getUsersByAge(int age) {
 		 List<Users> users = new ArrayList<Users>();
@@ -253,9 +253,9 @@ public class UserService {
 	}
 
 	/**
-	 * Выборка пользователей из базы данных по полу пользователя
-	 * @param gender пол пользователя
-	 * @return список пользователей
+	 * Selection of users from data base by gender
+	 * @param gender 
+	 * @return users - list
 	 */
 	public List<Users> getUsersByGender(String gender) {
 		 List<Users> users = new ArrayList<Users>();
@@ -281,9 +281,9 @@ public class UserService {
 	}
 
 	/**
-	 * Выборка пользователей из базы данных по номеру телефона
-	 * @param phone номер телефона
-	 * @return список пользователей
+	 * Selection of users from data base by
+	 * @param phone 
+	 * @return users 
 	 */
 	public List<Users> getUsersByPhone(String phone) {
 		 List<Users> users = new ArrayList<Users>();
