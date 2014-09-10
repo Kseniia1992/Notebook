@@ -24,7 +24,7 @@ public class UserService {
 	private Connection conn;
 
     /**
-     * Constructor performs a database connection
+     * Constructor 
      */
 	public UserService() {
         conn = ConnectionDB.getConnection();
